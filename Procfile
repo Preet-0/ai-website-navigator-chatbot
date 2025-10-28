@@ -1,1 +1,1 @@
-web: gunicorn Project.wsgi
+web: gunicorn ai_navigator.wsgi
