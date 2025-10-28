@@ -2,8 +2,5 @@ Django==5.2.7
 python-dotenv==1.0.1
 requests==2.32.3
 mistralai==1.2.3
-<<<<<<< HEAD
 gunicorn==23.0.0
 whitenoise==6.7.0
-=======
->>>>>>> 493a2931c91ef4d8768f3da31d2ed241f2d494c3
