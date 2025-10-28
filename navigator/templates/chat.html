@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AI Website Navigator Chatbot</title>
+  </head>
+  <body>
+    <h2>AI Chatbot</h2>
+    <form method="post">
+      {% csrf_token %}
+      <label>Paste Website URL:</label><br>
+      <input type="text" name="website_url" placeholder="e.g. https://amazon.com" required><br><br>
+
+      <label>Your Query:</label><br>
+      <input type="text" name="user_input" placeholder="e.g. show me contact details" required>
+      <button type="submit">Ask</button>
+    </form>
+
+    {% if response %}
+      <p><strong>Bot:</strong> {{ response }}</p>
+    {% endif %}
+  </body>
+</html>
